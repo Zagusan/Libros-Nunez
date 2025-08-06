@@ -1,0 +1,28 @@
+.bienvenida-seccion
+{
+    box-sizing: border-box;
+    max-height: 615px;
+    background: #e9e8f0;
+    padding: 48px 24px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenida-layout
+{
+    display: flex;
+}
+
+.bienvenida-layout img
+{
+    min-width: 180px;
+    max-width: 30vw;
+    max-height: 300px;
+    object-fit: scale-down;
+}
+
+.bienvenida-layout strong
+{
+    font-size: 38px;
+}

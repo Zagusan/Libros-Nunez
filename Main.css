@@ -3,9 +3,12 @@ body {
 }
 .header {
     display: flex;
-    position: fixed;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    position: sticky;
+    top: 00px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     box-sizing: border-box;
     padding: 10px 32px 10px 32px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -19,7 +22,8 @@ body {
 .header-icons {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    flex-shrink: 1;
+    min-width: min-content;
     justify-content: end;
     gap: 20px;
 }
@@ -39,14 +43,17 @@ body {
 .header nav {
     padding: 0 32px;
     display: flex;
-    flex-wrap: wrap;
+    flex-grow: 1;
+    min-width: min-content;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
 }
 
 .logo {
     display: flex;
-    align-items: center;
+    min-width: min-content;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -66,7 +73,7 @@ body {
 }
 
 main {
-    padding: 64px 0;
+    padding: 0;
 }
 
 .main-nav {
