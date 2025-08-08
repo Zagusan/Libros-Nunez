@@ -2,6 +2,7 @@
 {
     box-sizing: border-box;
     max-height: 615px;
+    width: 100%;
     background: #e9e8f0;
     padding: 48px 24px 32px;
     display: flex;
@@ -25,10 +26,4 @@
 .bienvenida-layout strong
 {
     font-size: 38px;
-}
-
-footer {
-    background: #202075;
-    padding: 20px;
-    color: #ffffff;
 }
