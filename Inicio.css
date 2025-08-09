@@ -13,6 +13,7 @@
 .bienvenida-layout
 {
     display: flex;
+    justify-content: center;
 }
 
 .bienvenida-layout img
@@ -26,4 +27,11 @@
 .bienvenida-layout strong
 {
     font-size: 38px;
+}
+
+.bienvenida-texto {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size:large;
 }

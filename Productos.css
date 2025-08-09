@@ -59,22 +59,6 @@
     margin-bottom: 10px;
 }
 
-.btn-carro {
-    background: #4b338a;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 6px 18px;
-    font-size: 0.95rem;
-    margin-bottom: 8px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.btn-carro:hover {
-    background: #372463;
-}
-
 .producto-card .precio {
     font-size: 1rem;
     color: #ffffff;

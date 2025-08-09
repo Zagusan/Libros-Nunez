@@ -12,6 +12,39 @@ main {
     padding: 0;
 }
 
+@keyframes bounce-y-start {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(4px);
+        bottom: 8px;
+    }
+}
+
+@keyframes bounce-y {
+    from {
+        transform: translateY(4px);
+        bottom: 8px;
+    }
+    to
+    {
+        transform: translateY(-4px);
+        top: 8px;
+    }
+}
+
+.bounce-y {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.bounce-y:hover {
+    animation:
+        bounce-y-start 0.5s forwards ease-out,
+        bounce-y 1s infinite alternate ease-in-out;
+    animation-delay: 0s, 0.5s;
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -102,21 +135,21 @@ body {
     padding: 0;
 }
 
-.btn-carro {
-    background: #4b338a;
+.boton {
+    background: #471f96;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 16px;
     padding: 6px 18px;
     font-size: 0.95rem;
-    margin-bottom: 8px;
+    margin: 8px 0;
     cursor: pointer;
-    transition: background-color 0.2s;
 }
 
-.btn-carro:hover {
-    background: #372463;
+.boton:hover {
+    background: #3c1a7f;
 }
+
 
 footer {
     display: flex;
