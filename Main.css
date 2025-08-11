@@ -10,7 +10,7 @@ main {
     min-height: 100vh;
     width: 100%;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 @keyframes bounce-y-start {
