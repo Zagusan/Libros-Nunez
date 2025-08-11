@@ -96,6 +96,7 @@ main {
     flex: 2;
     gap: 32px;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -106,10 +107,12 @@ main {
     font-size: 16px;
     font-weight: 500;
     transition: color 0.2s;
+    transition: transform 0.2s ease-out;
 }
 
 .header nav a:hover {
     color: #0078d7;
+    transform: scale(115%);
 }
 
 .header-icons {
