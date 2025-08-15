@@ -106,8 +106,7 @@ main {
     color: #111;
     font-size: 16px;
     font-weight: 500;
-    transition: color 0.2s;
-    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, color 0.2s linear;
 }
 
 .header nav a:hover {
