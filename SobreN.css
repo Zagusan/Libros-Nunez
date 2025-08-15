@@ -1,16 +1,17 @@
-body {
+main {
     background-image: url("img/FPag3.png");
-    backdrop-filter: blur(4px);
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
 }
+.blur {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+}
 h1 {
     color: aliceblue;
-}
-img {
-    height: 260px;
-
-    border-radius: 30px;
 }
 p {
     color: aliceblue;
@@ -19,23 +20,44 @@ p {
 .Chetos{
     padding-top: 25px;
     padding-bottom: 50px;
-    display:flex;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 0px;
 }
+.Chetos img {
+    height: 260px;
+
+    border-radius: 30px;
+}
 .Sec1 {
-    
+    flex: 2 1;
+    min-width: min(500px, 90%);
+    max-width: 500px;
     text-align: justify;
-    margin-right: 60px;
+    margin-right: 50px;
     margin-left: 50px;
     gap: 20px;
 }
 .Sec2 {
+    flex: 2 1;
+    min-width: min(500px, 90%);
+    max-width: 500px;
     text-align: justify;
     margin-left: 50px;
-    margin-right: 80px;
+    margin-right: 50px;
 }
+.Sec2 img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
 .Sec3 {
+    flex: 2 1;
+    min-width: min(500px, 90%);
+    max-width: 500px;
     text-align: justify;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-right: 50px;
 }
