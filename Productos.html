@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="Main.css">
     <link rel="stylesheet" href="Productos.css">
     <link rel="icon" href="img/Núñez_industries.png">
+    <script src="Carrito.js" defer></script>
 </head>
 
+<body>
 <main>
     <header class="header">
         <a class="logo" href="index.html">
@@ -24,7 +26,7 @@
             <a href="SobreNosotros.html">Sobre Nosotros</a>
         </nav>
         <div class="header-icons">
-            <img src="svg/shopping-cart.svg" alt="Carrito" class="icon" />
+            <img id="cart-icon" src="svg/shopping-cart.svg" alt="Carrito" class="icon" />
             <img src="svg/circle-user.svg" alt="Usuario" class="icon" />
         </div>
     </header>
@@ -37,7 +39,11 @@
                 <h3>Luna de Plutón</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">INFANTIL</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-pluton" value="1" min="1">
+               </div>
+                <button class="boton bounce-y" onclick="agregarLibros('Luna de Plutón', 5010.80, 'cantidad-pluton')">Añadir al carro</button>
                 <span class="precio">₡5010.80</span>
             </div>
             <div class="producto-card">
@@ -45,7 +51,11 @@
                 <h3>Festival de la blasfemia</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">JUVENIL</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-blasfemia" value="1" min="1">
+               </div>
+                <button class="boton bounce-y" onclick="agregarLibros('Festival de la blasfemia', 7052.89, 'cantidad-blasfemia')">Añadir al carro</button>
                 <span class="precio">₡7052.89</span>
             </div>
             <div class="producto-card">
@@ -53,7 +63,11 @@
                 <h3>Escape</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">JUVENIL</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-escape" value="1" min="1">
+               </div>
+                <button class="boton bounce-y" onclick="agregarLibros('Escape', 5601, 'cantidad-escape')">Añadir al carro</button>
                 <span class="precio">₡5601.00</span>
             </div>
         </div>
@@ -67,7 +81,11 @@
                 <h3>Valle de la calma</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">NOVELA NEGRA</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-valle" value="1" min="1">
+               </div>
+                <button class="boton bounce-y" onclick="agregarLibros('Valle de la calma', 5601, 'cantidad-valle')">Añadir al carro</button>
                 <span class="precio">₡5601.00</span>
             </div>
             <div class="producto-card">
@@ -75,7 +93,11 @@
                 <h3>El libro negro</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">NOVELA NEGRA</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-negro" value="1" min="1">
+               </div>
+                <button class="boton bounce-y" onclick="agregarLibros('El libro negro', 5010.80, 'cantidad-negro')">Añadir al carro</button>
                 <span class="precio">₡5010.80</span>
             </div>
             <div class="producto-card">
@@ -83,7 +105,11 @@
                 <h3>La guerra de Ysaak</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">FANTASÍA</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-ysaak" value="1" min="1">
+               </div>
+                <button class="boton bounce-y" onclick="agregarLibros('La guerra de Ysaak', 5601, 'cantidad-ysaak')">Añadir al carro</button>
                 <span class="precio">₡5601.00</span>
             </div>
         </div>
@@ -110,5 +136,9 @@
         </div>
         <strong class="footer-copyright">© Núñez Industries</strong>
     </footer>
+    <!-- Chat de Tidio con AgentAI -->
+    <script src="//code.tidio.co/wnzhkekafxxezo79x4shmkhpfzbpjoie.js" async></script>
 </main>
+</body>
+</html>
 
