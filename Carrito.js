@@ -1,3 +1,4 @@
+// Funcionalidad del carrito de compras
 const carrito = [];
 
 function agregarlibros(nombre, precio, cantidadId) {
