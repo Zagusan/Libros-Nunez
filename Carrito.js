@@ -41,16 +41,34 @@ function mostrarCarrito() {
         return;
     }
 
-    let mensaje = "Carrito de compras:\n\n";
+    let mensaje = "CARRITO DE COMPRAS\n==================\n\n";
     let total = 0;
 
     for (let i = 0; i < carrito.length; i++) {
         const libro = carrito[i];
         const subtotal = libro.precio * libro.cantidad;
-        mensaje += libro.nombre + "\nCantidad: " + libro.cantidad + "\nPrecio: ₡" + libro.precio + "\nSubtotal: ₡" + subtotal + "\n\n";
+        mensaje += (i + 1) + ". " + libro.nombre + "\n";
+        mensaje += "   Cantidad: " + libro.cantidad + "\n";
+        mensaje += "   Precio: ₡" + libro.precio + "\n";
+        mensaje += "   Subtotal: ₡" + subtotal + "\n\n";
         total += subtotal;
     }
 
-    mensaje += "Total a pagar: ₡" + total;
+    mensaje += "==================\nTOTAL A PAGAR: ₡" + total;
     alert(mensaje);
 }
+
+;(function attachCartIconHandler(){
+    try {
+        const icon = document.getElementById('cart-icon');
+        if (icon) {
+            icon.style.cursor = 'pointer';
+            icon.addEventListener('click', function (e) {
+                e.preventDefault();
+                mostrarCarrito();
+            });
+        }
+    } catch (err) {
+        console.error('No se pudo adjuntar el handler del carrito:', err);
+    }
+})();
