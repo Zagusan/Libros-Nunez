@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Main.css">
     <link rel="stylesheet" href="Productos.css">
     <link rel="icon" href="img/Núñez_industries.png">
+    <link src="Carrito.js">
 </head>
 
 <main>
@@ -37,7 +38,11 @@
                 <h3>Luna de Plutón</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">INFANTIL</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-muerteanunciada" value="1" min="1">
+               </div>
+                <button class="boton bounce-y"onclick = "('Luna de Plutón', 5010.80,'Cantidad-pluton')">Añadir al carro</button>
                 <span class="precio">₡5010.80</span>
             </div>
             <div class="producto-card">
@@ -45,7 +50,11 @@
                 <h3>Festival de la blasfemia</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">JUVENIL</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-muerteanunciada" value="1" min="1">
+               </div>
+                <button class="boton bounce-y"onclick="agregarLibros('Festival de la blasfemia', 7052.89,'Cantidad-blasfemia')">Añadir al carro</button>
                 <span class="precio">₡7052.89</span>
             </div>
             <div class="producto-card">
@@ -53,7 +62,11 @@
                 <h3>Escape</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">JUVENIL</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-muerteanunciada" value="1" min="1">
+               </div>
+                <button class="boton bounce-y"onclick="agregarLibros('Escape', 5601,'Cantidad-Escape')">Añadir al carro</button>
                 <span class="precio">₡5601.00</span>
             </div>
         </div>
@@ -67,7 +80,11 @@
                 <h3>Valle de la calma</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">NOVELA NEGRA</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-muerteanunciada" value="1" min="1">
+               </div>
+                <button class="boton bounce-y"onclick="agregarLibros('Valle de la calma', 5601,'Cantidad-Valle')">Añadir al carro</button>
                 <span class="precio">₡5601.00</span>
             </div>
             <div class="producto-card">
@@ -75,7 +92,11 @@
                 <h3>El libro negro</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">NOVELA NEGRA</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-muerteanunciada" value="1" min="1">
+               </div>
+                <button class="boton bounce-y"onclick="agregarLibros('El libro negro', 5010.80,'Cantidad-negro')">Añadir al carro</button>
                 <span class="precio">₡5010.80</span>
             </div>
             <div class="producto-card">
@@ -83,7 +104,11 @@
                 <h3>La guerra de Ysaak</h3>
                 <span class="autor">Dross</span>
                 <span class="categoria">FANTASÍA</span>
-                <button class="boton bounce-y">Añadir al carro</button>
+                <div class="cantidad-container">
+                   <span class="cantidad-label">Cantidad:</span>
+                   <input type="number" class="cantidad-input" id="cantidad-muerteanunciada" value="1" min="1">
+               </div>
+                <button class="boton bounce-y" onclick="agregarLibros('La guerra de Ysaak', 5601,'Cantidad-Ysaak')">Añadir al carro</button>
                 <span class="precio">₡5601.00</span>
             </div>
         </div>
