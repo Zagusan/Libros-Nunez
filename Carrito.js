@@ -1,8 +1,13 @@
 // Funcionalidad del carrito de compras
 const carrito = [];
 
-function agregarlibros(nombre, precio, cantidadId) {
-    const cantidadTexto = document.getElementById(cantidadId).value;
+function agregarLibros(nombre, precio, cantidadId) {
+    const elem = document.getElementById(cantidadId);
+    if (!elem) {
+        alert('No se encontró el campo de cantidad: ' + cantidadId);
+        return;
+    }
+    const cantidadTexto = elem.value;
     const cantidad = parseInt(cantidadTexto);
 
     if (cantidadTexto === "" || cantidad <= 0) {
@@ -27,7 +32,7 @@ function agregarlibros(nombre, precio, cantidadId) {
         });
     }
 
-    alert("Libro agregado: " + nombre + "(Cantidad: " + cantidad + ")");
+    alert("Libro agregado: " + nombre + " (Cantidad: " + cantidad + ")");
 }
 
 function mostrarCarrito() {
@@ -40,12 +45,12 @@ function mostrarCarrito() {
     let total = 0;
 
     for (let i = 0; i < carrito.length; i++) {
-        const libro = carrito[i]
+        const libro = carrito[i];
         const subtotal = libro.precio * libro.cantidad;
-        mensaje += libro.nombre + "\nCantidad: " + libro.cantidad + "\nPrecio: Grambadis" + libro.precio + "\nSubtotal: Grambadis" + subtotal + "\n\n";
+        mensaje += libro.nombre + "\nCantidad: " + libro.cantidad + "\nPrecio: ₡" + libro.precio + "\nSubtotal: ₡" + subtotal + "\n\n";
         total += subtotal;
     }
 
-    mensaje += "Total a pagar: Grambadis" + total;
+    mensaje += "Total a pagar: ₡" + total;
     alert(mensaje);
 }
